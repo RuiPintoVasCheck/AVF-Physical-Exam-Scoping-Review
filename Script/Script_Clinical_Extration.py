@@ -12,7 +12,7 @@ from collections import Counter
 nlp = spacy.load("en_core_web_sm")
 
 # Load the extraction database
-df = pd.read_xlsx ("clinical_extractions.xlsx")
+df = pd.read_csv ("clinical_extractions.xlsx")
 
 def extract_clinical_terms(text_series):
     """Tokenises text and filters for nouns and adjectives."""
